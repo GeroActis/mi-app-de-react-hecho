@@ -2,6 +2,7 @@ import FichasGrid from "../components/FichasGrid/FichasGrid"
 import CategoriasGrid from "../components/CategosiasGrid/CategoriasGrid"
 import CardGrid from "../components/CardGrid/CardGrid"
 import personajes from "../data/personajes/personajes"
+import Contador from "../components/Contador/Contador"
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
                 <FichasGrid />
                 <CategoriasGrid />
                 <CardGrid personajes= {personajes} />
+                <Contador/>
             </main>
         </>
     )

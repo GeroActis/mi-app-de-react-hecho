@@ -1,10 +1,8 @@
-import personajesData from "../data/personajes/personajes";
+// src/components/PersonajeSingle.js
 
-const Personaje = ({ match }) => {
-    const { id } = match.params;
+import React from 'react';
 
-    const personaje = personajesData.find((personaje) => personaje.id === Number(id));
-
+const PersonajeSingle = ({ personaje }) => {
     if (!personaje) {
         return <p>Personaje no encontrado</p>;
     }
@@ -18,4 +16,4 @@ const Personaje = ({ match }) => {
     );
 };
 
-export default Personaje;
+export default PersonajeSingle;
